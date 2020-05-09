@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       {/*<div className="logo">
         <img src={info.logo} alt="company logo"></img>
-  </div>*/}
+      </div>*/}
       <div>
         <p>&#169; 2020 {info.company} </p>
       </div>
