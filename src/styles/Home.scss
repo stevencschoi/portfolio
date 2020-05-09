@@ -1,0 +1,29 @@
+@import "utilities/_variables.scss";
+
+.flex-container {
+  display: flex;
+  background: #fad155;
+  width: 45%;
+  .feature-image {
+    height: $feature-height;
+    width: $feature-height;
+    margin-right: $margin-list;
+    img {
+      max-width: 100%;
+      height: auto;
+      // border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .feature {
+    height: $feature-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+  }
+}

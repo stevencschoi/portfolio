@@ -9,6 +9,7 @@ const MyContextProvider = props => {
   const state = {
     // logo: require("../assets/pic.JPG"),
     company: "Steven Choi",
+    image: require("../assets/pic.JPG"),
     github: `https://github.com/stevencschoi/`,
     facebook: `https://www.facebook.com/stevencschoi`,
     instagram: `https://www.instagram.com/the_steve/`,

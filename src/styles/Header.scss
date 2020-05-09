@@ -9,7 +9,9 @@ header {
 nav {
   display: flex;
   ul {
+    // width: 100%;
     display: flex;
+    justify-content: space-evenly;
     margin-left: $margin-list;
 
     li {
