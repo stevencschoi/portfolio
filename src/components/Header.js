@@ -5,9 +5,9 @@ import "../styles/Header.scss";
 export default function Header(props) {
   return (
     <header>
-      <div className="logo">
+      {/*<div className="logo">
         <img src={props.logo} alt="company logo"></img>
-      </div>
+  </div>*/}
       <div>
         <Nav />
       </div>
