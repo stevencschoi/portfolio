@@ -24,11 +24,11 @@ export default function Footer() {
           <NavLink path={info.instagram}>
             <i className="fab fa-instagram-square"></i>
           </NavLink>
-          <NavLink path={info.twitter}>
-            <i className="fab fa-twitter"></i>
-          </NavLink>
           <NavLink path={info.linkedin}>
             <i className="fab fa-linkedin"></i>
+          </NavLink>
+          <NavLink path={info.twitter}>
+            <i className="fab fa-twitter"></i>
           </NavLink>
         </ul>
       </div>
