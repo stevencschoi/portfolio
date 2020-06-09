@@ -18,9 +18,9 @@ export default function Footer() {
           <NavLink path={info.github}>
             <i className="fab fa-github"></i>
           </NavLink>
-          <NavLink path={info.facebook}>
+          {/*<NavLink path={info.facebook}>
             <i className="fab fa-facebook"></i>
-          </NavLink>
+          </NavLink>*/}
           <NavLink path={info.instagram}>
             <i className="fab fa-instagram-square"></i>
           </NavLink>

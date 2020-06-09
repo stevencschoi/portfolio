@@ -4,6 +4,7 @@ import { MyContext } from "../components/MyContext";
 
 export default function Home() {
   const feature = useContext(MyContext);
+
   return (
     <div className="flex-container">
       <div className="feature-image">
