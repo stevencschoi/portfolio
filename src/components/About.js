@@ -35,7 +35,7 @@ export default function About() {
         </p>
       </article>
       <article>
-        <h2>Adaptability</h2>
+        <h2>Stay Adaptable</h2>
         <p className="quote">
           When we are no longer able to change a situation, we are challenged to
           change ourselves.” - Viktor Frankl

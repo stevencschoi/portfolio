@@ -2,7 +2,7 @@
 
 .flex-container {
   display: flex;
-  background: #fad155;
+  background-image: linear-gradient(to right, #fad155 66%, $background-color);
   width: 45%;
   .feature-image {
     height: $feature-height;
@@ -22,6 +22,9 @@
     flex-direction: column;
     justify-content: center;
     color: $background-color;
+    h1 {
+      color: $background-color;
+    }
     h3 {
       font-size: 1.5rem;
       font-style: italic;

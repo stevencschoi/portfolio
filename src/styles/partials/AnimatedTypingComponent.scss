@@ -5,7 +5,6 @@
 
   .span {
     color: $complement;
-    // color: #ccccf4;
   }
 
   .span,
@@ -16,15 +15,24 @@
     font-weight: 700;
   }
 
-  .passionate {
-    color: #f4f4cc;
+  a {
+    color: $yellow;
   }
 
-  .motivated {
+  a:hover,
+  a:focus {
+    color: $complement;
+  }
+
+  .passionate {
     color: #e0ccf4;
   }
 
+  .motivated {
+    color: $yellow;
+  }
+
   .reliable {
-    color: #f4cccc;
+    color: $accent;
   }
 }
