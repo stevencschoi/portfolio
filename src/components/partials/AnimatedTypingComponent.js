@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import NavLink from "./NavLink";
 import Typing from "react-typing-animation";
 
@@ -6,6 +6,29 @@ import "../../styles/partials/AnimatedTypingComponent.scss";
 
 export default function AnimatedTypingComponent() {
   const delay = 1000;
+  const toType = ["passionate", "motivated", "reliable"];
+
+  const typeWords = words => {
+    const wordsToType = words.map((word, index) => {
+      if (index === words.length - 1) {
+        return (
+          <>
+            <span className={word}>{word}.</span>
+            <Typing.Delay ms={delay} />
+          </>
+        );
+      } else {
+        return (
+          <>
+            <span className={word}>{word}.</span>
+            <Typing.Delay ms={delay} />
+            <Typing.Backspace count={word.length + 1} />
+          </>
+        );
+      }
+    });
+    return wordsToType;
+  };
 
   return (
     <div className="typewriter">
@@ -16,19 +39,13 @@ export default function AnimatedTypingComponent() {
         <p>
           I am a <span className="span">web developer.</span>
         </p>
-        <Typing.Delay ms={delay} />
-        <span>
-          I am <span className="passionate">passionate.</span>
-        </span>
-        <Typing.Delay ms={delay} />
-        <Typing.Backspace count={11} />
-        <span className="motivated">motivated.</span>
-        <Typing.Delay ms={delay} />
-        <Typing.Backspace count={10} />
-        <span className="reliable">reliable.</span>
-        <Typing.Delay ms={delay} />
+        <div className="animated-text">
+          <Typing.Delay ms={delay} />
+          <p>I am</p>
+          {typeWords(toType)}
+        </div>
       </Typing>
-      <Typing speed={10}>
+      <Typing speed={5}>
         <Typing.Delay ms={11000} />
         <p>
           Have a look around and if you have any questions,{" "}
