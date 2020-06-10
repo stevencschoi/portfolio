@@ -8,13 +8,13 @@ export default function AnimatedTypingComponent() {
   const delay = 1000;
 
   return (
-    <Typing>
-      <div className="typewriter">
+    <div className="typewriter">
+      <Typing speed={25}>
         <p>Hi, my name is Steven.</p>
         <Typing.Delay ms={delay} />
         <Typing.Backspace count={22} />
         <p>
-          I am a <strong>web developer.</strong>
+          I am a <span className="span">web developer.</span>
         </p>
         <Typing.Delay ms={delay} />
         <span>
@@ -22,16 +22,19 @@ export default function AnimatedTypingComponent() {
         </span>
         <Typing.Delay ms={delay} />
         <Typing.Backspace count={11} />
-        <span className="curious">curious.</span>
-        <Typing.Delay ms={delay} />
-        <Typing.Backspace count={8} />
         <span className="motivated">motivated.</span>
         <Typing.Delay ms={delay} />
+        <Typing.Backspace count={10} />
+        <span className="reliable">reliable.</span>
+        <Typing.Delay ms={delay} />
+      </Typing>
+      <Typing speed={10}>
+        <Typing.Delay ms={11000} />
         <p>
           Have a look around and if you have any questions,{" "}
           <a href="mailto:stevencschoi@gmail.com">let me know!</a>
         </p>
-      </div>
-    </Typing>
+      </Typing>
+    </div>
   );
 }

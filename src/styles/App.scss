@@ -1,6 +1,12 @@
+@import "./utilities/variables";
+
 body {
   font-size: 1.8rem;
-  // background-color: #000000;
+  background-color: $background-color;
+  color: $color;
+  a {
+    color: $link;
+  }
   h1,
   h2,
   h3,

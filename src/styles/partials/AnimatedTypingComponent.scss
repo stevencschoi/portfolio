@@ -1,7 +1,30 @@
 @import "../utilities/_variables.scss";
 
-.passionate,
-.curious,
-.motivated {
-  font-weight: 700;
+.typewriter {
+  margin-top: $margin-list;
+
+  .span {
+    color: $complement;
+    // color: #ccccf4;
+  }
+
+  .span,
+  .passionate,
+  .motivated,
+  .reliable,
+  a {
+    font-weight: 700;
+  }
+
+  .passionate {
+    color: #f4f4cc;
+  }
+
+  .motivated {
+    color: #e0ccf4;
+  }
+
+  .reliable {
+    color: #f4cccc;
+  }
 }

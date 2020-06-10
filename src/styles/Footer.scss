@@ -19,7 +19,12 @@ footer {
     margin-top: $margin-list;
     margin-left: $margin-list;
     li {
-      margin-right: $margin-list;
+      margin: 0 $margin-list;
+    }
+    li:hover,
+    li:focus {
+      color: $complement;
+      font-weight: 700;
     }
   }
 }
