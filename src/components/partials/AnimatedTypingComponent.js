@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 // import NavLink from "./NavLink";
 import Typing from "react-typing-animation";
 
@@ -33,7 +33,9 @@ export default function AnimatedTypingComponent() {
   return (
     <div className="typewriter">
       <Typing speed={25}>
-        <p>Hi, my name is Steven.</p>
+        <p>
+          Hi, my name is <span className="name">Steven</span>.
+        </p>
         <Typing.Delay ms={delay} />
         <Typing.Backspace count={22} />
         <p>
@@ -45,7 +47,7 @@ export default function AnimatedTypingComponent() {
           {typeWords(toType)}
         </div>
       </Typing>
-      <Typing speed={5}>
+      <Typing speed={8}>
         <Typing.Delay ms={11000} />
         <p>
           Have a look around and if you have any questions,{" "}

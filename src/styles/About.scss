@@ -1,5 +1,9 @@
 @import "utilities/_variables.scss";
 
+article {
+  margin: $margin-article 0;
+}
+
 .quote {
   font-style: italic;
 }

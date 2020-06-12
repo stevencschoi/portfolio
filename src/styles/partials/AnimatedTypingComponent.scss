@@ -3,6 +3,10 @@
 .typewriter {
   margin-top: $margin-list;
 
+  .name {
+    color: #ffffff;
+  }
+
   .span {
     color: $complement;
   }
@@ -14,6 +18,7 @@
     }
   }
 
+  .name,
   .span,
   .passionate,
   .motivated,
@@ -23,7 +28,7 @@
   }
 
   a {
-    color: $yellow;
+    color: #ffffff;
   }
 
   a:hover,
@@ -36,7 +41,7 @@
   }
 
   .motivated {
-    color: $yellow;
+    color: #ffffff;
   }
 
   .reliable {
