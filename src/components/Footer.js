@@ -15,19 +15,19 @@ export default function Footer() {
       </div>
       <div>
         <ul className="social">
-          <NavLink path={info.github}>
+          <NavLink path={info.github} target="_blank">
             <i className="fab fa-github"></i>
           </NavLink>
           {/*<NavLink path={info.facebook}>
             <i className="fab fa-facebook"></i>
           </NavLink>*/}
-          <NavLink path={info.instagram}>
+          <NavLink path={info.instagram} target="_blank">
             <i className="fab fa-instagram-square"></i>
           </NavLink>
-          <NavLink path={info.linkedin}>
+          <NavLink path={info.linkedin} target="_blank">
             <i className="fab fa-linkedin"></i>
           </NavLink>
-          <NavLink path={info.twitter}>
+          <NavLink path={info.twitter} target="_blank">
             <i className="fab fa-twitter"></i>
           </NavLink>
         </ul>
