@@ -1,10 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
+import { info } from '../models';
 import NavLink from "./partials/NavLink";
 import "../styles/Footer.scss";
-import { MyContext } from "../components/MyContext";
 
 export default function Footer() {
-  const info = useContext(MyContext);
+  const socialIcons = {
+    github: 'fab fa-github',
+    facebook: 'fab fa-facebook',
+    instagram: 'fab fa-instagram-square',
+    linkedin: 'fab fa-linkedin',
+    twitter: 'fab fa-twitter'
+  }
+
   return (
     <footer>
       {/*<div className="logo">
@@ -15,21 +22,15 @@ export default function Footer() {
       </div>
       <div>
         <ul className="social">
-          <NavLink path={info.github} target="_blank">
-            <i className="fab fa-github"></i>
-          </NavLink>
-          {/*<NavLink path={info.facebook}>
-            <i className="fab fa-facebook"></i>
-          </NavLink>*/}
-          <NavLink path={info.instagram} target="_blank">
-            <i className="fab fa-instagram-square"></i>
-          </NavLink>
-          <NavLink path={info.linkedin} target="_blank">
-            <i className="fab fa-linkedin"></i>
-          </NavLink>
-          <NavLink path={info.twitter} target="_blank">
-            <i className="fab fa-twitter"></i>
-          </NavLink>
+          {info.social.map((platform, index) => {
+            return (
+              <React.Fragment key={index}>
+                <NavLink path={platform.link} target="_blank">
+                  <i className={socialIcons[platform.name]}></i>
+                </NavLink>
+              </React.Fragment>
+            )
+          })}
         </ul>
       </div>
     </footer>

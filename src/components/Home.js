@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
+import { info } from '../models';
 import "../styles/Home.scss";
-import { MyContext } from "../components/MyContext";
 
 import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 
 export default function Home() {
-  const feature = useContext(MyContext);
-
   return (
-    <>
+    <main className="wrapper">
       <div className="flex-container">
         <div className="feature-image">
-          <img src={feature.image} alt="profile picture" />
+          <img src={info.image} alt="Steven headshot" />
         </div>
         <div className="feature">
           <h1>Steven Choi</h1>
@@ -19,6 +17,6 @@ export default function Home() {
         </div>
       </div>
       <AnimatedTypingComponent />
-    </>
+    </main>
   );
 }

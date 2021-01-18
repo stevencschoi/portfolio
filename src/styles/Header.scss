@@ -1,10 +1,11 @@
-@import "utilities/_variables.scss";
+@import 'utilities/_variables.scss';
 
 header {
   height: $fh-height;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  // padding: 15px 0;
   nav {
     height: 100%;
     ul {
@@ -25,8 +26,8 @@ header {
 
       a:hover,
       a:focus {
-        background-color: $complement;
-        color: $background-color;
+        // background-color: $secondary;
+        color: $secondary;
         // font-weight: 700;
       }
     }

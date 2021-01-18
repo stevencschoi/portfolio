@@ -1,14 +1,14 @@
-@import "../utilities/_variables.scss";
+@import '../utilities/_variables.scss';
 
 .typewriter {
-  margin-top: $margin-list;
+  margin-top: 2 * $margin-list;
 
   .name {
     color: #ffffff;
   }
 
   .span {
-    color: $complement;
+    color: $link;
   }
 
   .animated-text {
@@ -28,23 +28,24 @@
   }
 
   a {
-    color: #ffffff;
+    color: $secondary;
   }
 
   a:hover,
   a:focus {
-    color: $complement;
+    color: $secondary;
   }
 
   .passionate {
-    color: #e0ccf4;
+    color: $red;
   }
 
   .motivated {
-    color: #ffffff;
+    color: $yellow;
   }
 
   .reliable {
-    color: $accent;
+    // color: #6e44ff;
+    color: $pink;
   }
 }

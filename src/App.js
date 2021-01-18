@@ -6,7 +6,6 @@ import Blog from "./components/Blog";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { MyContextProvider } from "./components/MyContext";
 
 import "./styles/App.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -14,8 +13,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <Router>
-      <div className="App"></div>
-      <MyContextProvider>
+      <main className="App">
         <Header />
         <Switch>
           <Route path="/" exact component={Home} />
@@ -25,7 +23,7 @@ function App() {
           <Route path="/contact" exact component={Contact} />
         </Switch>
         <Footer />
-      </MyContextProvider>
+      </main>
     </Router>
   );
 }

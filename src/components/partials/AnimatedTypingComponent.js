@@ -6,24 +6,24 @@ import "../../styles/partials/AnimatedTypingComponent.scss";
 
 export default function AnimatedTypingComponent() {
   const delay = 1000;
-  const toType = ["passionate", "motivated", "reliable"];
+  const toType = ["reliable", "passionate", "motivated"];
 
   const typeWords = words => {
     const wordsToType = words.map((word, index) => {
       if (index === words.length - 1) {
         return (
-          <>
+          <React.Fragment key={index}>
             <span className={word}>{word}.</span>
             <Typing.Delay ms={delay} />
-          </>
+          </React.Fragment>
         );
       } else {
         return (
-          <>
+          <React.Fragment key={index}>
             <span className={word}>{word}.</span>
             <Typing.Delay ms={delay} />
             <Typing.Backspace count={word.length + 1} />
-          </>
+          </React.Fragment>
         );
       }
     });
@@ -47,11 +47,11 @@ export default function AnimatedTypingComponent() {
           {typeWords(toType)}
         </div>
       </Typing>
-      <Typing speed={8}>
-        <Typing.Delay ms={11000} />
+      <Typing speed={15}>
+        <Typing.Delay ms={10500} />
         <p>
-          Have a look around and if you have any questions,{" "}
-          <a href="mailto:stevencschoi@gmail.com">let me know!</a>
+          Enjoy your stay and feel free to{" "}
+          <a href="mailto:stevencschoi@gmail.com">leave me a message!</a>
         </p>
       </Typing>
     </div>
