@@ -2,6 +2,7 @@
 @import './partials/header';
 @import './partials/home';
 @import './partials/type';
+@import './partials/values';
 @import './partials/footer';
 
 html {
@@ -30,7 +31,12 @@ h1 {
 h2 {
   font-size: 3.2rem;
   font-weight: 500;
-  margin: 1rem 0;
+  margin: 4rem 0;
+}
+h3 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  margin: 1.7rem 0;
 }
 figcaption,
 figure,
@@ -255,9 +261,10 @@ a {
   border: 2px solid $lightblue;
   padding: 1.5rem 5rem;
   border-radius: 6px;
-  // transition: all 300ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   a {
     color: $lightblue;
   }
@@ -273,23 +280,21 @@ a {
 .button-link:hover,
 .button-link:focus {
   background-color: rgba(11, 10, 7, 0.7);
-  // color: $background-color;
+  color: $secondary;
+  border: 2px solid $secondary;
   a,
   i {
-    // color: $background-color;
+    color: $secondary;
   }
   i {
     transform: rotate(90deg);
   }
 }
 
-// .button-link:hover .fa-arrow-right:before,
-// .button-link:focus .fa-arrow-right:before {
-//   content: '';
-// }
-
 p {
+  color: $link;
   margin: 0;
+  font-size: 1.6rem;
 }
 
 code {
@@ -298,4 +303,8 @@ code {
 
 video {
   max-width: 100%;
+}
+
+section {
+  margin: 4rem 0;
 }

@@ -8,6 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  p {
+    color: #ffffff;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+  }
 }
 
 .button-container {
@@ -21,43 +27,11 @@
 
 .wrapper {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 25px 50px;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  // background-image: linear-gradient(to right, #fad155 66%, $background-color);
-  // width: 45%;
-  width: 600px;
-  .feature-image {
-    // height: $feature-height;
-    // width: $feature-height;
-    margin-right: 4 * $margin-list;
-    img {
-      min-width: 220px;
-      max-width: 220px;
-      min-height: 220px;
-      max-height: 220px;
-      // height: auto;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-  }
-
-  .feature {
-    height: $feature-height;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $link;
-    h1 {
-      color: $link;
-    }
-    h3 {
-      font-size: 1.5rem;
-      font-style: italic;
-    }
+  max-width: 1280px;
+  padding: 0 50px;
+  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

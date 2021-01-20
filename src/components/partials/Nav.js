@@ -5,9 +5,9 @@ const Nav = () => {
   return (
     <nav>
       <ul>
-        <NavHashLink smooth to="/">Home</NavHashLink>
-        <NavHashLink smooth to="/#about">About</NavHashLink>
-        <NavHashLink smooth to="/#projects">Projects</NavHashLink>
+        <NavHashLink smooth to="#" scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}>Home</NavHashLink>
+        <NavHashLink smooth to="/#values" scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}>Values</NavHashLink>
+        <NavHashLink smooth to="/#projects" scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}>Projects</NavHashLink>
         {/*<NavLink path="/inspiration">Inspiration</NavLink>*/}
         <a
           href="https://www.canva.com/design/DAD3-eaP9J8/mvI2wQ6QYyICoKOUsuWvlg/view?utm_content=DAD3-eaP9J8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"

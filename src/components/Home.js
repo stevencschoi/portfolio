@@ -1,7 +1,7 @@
 import React from "react";
 import { HashLink } from 'react-router-hash-link';
 import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
-import About from './About';
+import Values from './Values';
 import Projects from './Projects';
 
 const Home = () => {
@@ -11,10 +11,10 @@ const Home = () => {
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
           <h1>Hello, I'm <span className="name">Steven Choi</span>.</h1>
-          <h2>I'm a full-stack web developer.</h2>
+          <p>I'm a full-stack web developer.</p>
           <div className="button-container">
             <button className="button-link">
-              <HashLink smooth to="#about">
+              <HashLink smooth to="#values" scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}>
                 View My Work {' '}
                 <i className="fas fa-arrow-right"></i>
               </HashLink>
@@ -22,12 +22,14 @@ const Home = () => {
           </div>
         {/* </div> */}
       </div>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
+      <div className="wrapper">
+        <section id="values">
+          <Values />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+      </div>
     </>
   );
 }

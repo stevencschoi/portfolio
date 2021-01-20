@@ -1,0 +1,72 @@
+// .flex-container {
+//   display: flex;
+//   align-items: center;
+//   // background-image: linear-gradient(to right, #fad155 66%, $background-color);
+//   .feature-image {
+//     // height: $feature-height;
+//     // width: $feature-height;
+//     margin-right: 4 * $margin-list;
+//     img {
+//       min-width: 240px;
+//       max-width: 240px;
+//       min-height: 240px;
+//       max-height: 240px;
+//       // height: auto;
+//       border-radius: 50%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   .feature {
+//     height: $feature-height;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     color: $link;
+//     h1 {
+//       color: $link;
+//     }
+//     h3 {
+//       font-size: 1.5rem;
+//       font-style: italic;
+//     }
+//   }
+// }
+
+.image-article-container {
+  display: flex;
+  // justify-content: center;
+}
+
+article {
+  h3 {
+    margin-top: 0;
+  }
+  .learning {
+    color: $boldblue;
+  }
+
+  .challenges {
+    color: $red;
+  }
+
+  .adaptable {
+    color: $yellow;
+  }
+}
+
+.quote {
+  color: $secondary;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  margin-bottom: 1.7rem;
+}
+
+picture {
+  img {
+    max-width: 300px;
+    margin-right: 4rem;
+  }
+}
