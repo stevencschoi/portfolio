@@ -1,12 +1,22 @@
 .hero {
   background-color: #ffffff;
-  background-image: url('../../assets/banner.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
   background-blend-mode: luminosity;
-  height: calc(100vh - 77px);
+  height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.button-container {
+  margin: 2rem 0;
+}
+
+.button-container:hover,
+.button-container:focus {
+  background-color: transparent;
 }
 
 .wrapper {

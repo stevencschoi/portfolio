@@ -3,54 +3,55 @@
   flex-direction: column;
   // justify-content: center;
   height: 90px;
-  width: 535px;
+  width: 540px;
   font-size: 2rem;
   background-color: rgba(11, 10, 7, 0.7);
   padding: 2rem;
   border-radius: 10px;
-  .name {
-    color: $lightblue;
-  }
+}
 
-  .span {
-    color: $lightred;
-    // color: #6f58c9;
-  }
+.name {
+  color: $yellow;
+}
 
-  .animated-text {
-    display: flex;
-    p {
-      margin-right: 5px;
-    }
-  }
+.span {
+  color: $lightred;
+  // color: #6f58c9;
+}
 
-  .name,
-  .span,
-  .passionate,
-  .motivated,
-  .reliable,
-  a {
-    font-weight: 700;
+.animated-text {
+  display: flex;
+  p {
+    margin-right: 5px;
   }
+}
 
-  a {
-    color: $secondary;
-  }
+.name,
+.span,
+.passionate,
+.motivated,
+.reliable,
+a {
+  font-weight: 700;
+}
 
-  a:hover,
-  a:focus {
-    color: $secondary;
-  }
+a {
+  color: $secondary;
+}
 
-  .passionate {
-    color: $red;
-  }
+a:hover,
+a:focus {
+  color: $secondary;
+}
 
-  .motivated {
-    color: $yellow;
-  }
+.passionate {
+  color: $red;
+}
 
-  .reliable {
-    color: $lightpurple;
-  }
+.motivated {
+  color: $yellow;
+}
+
+.reliable {
+  color: $lightpurple;
 }
