@@ -2,9 +2,7 @@ import React from "react";
 // import NavLink from "./NavLink";
 import Typing from "react-typing-animation";
 
-import "../../styles/partials/AnimatedTypingComponent.scss";
-
-export default function AnimatedTypingComponent() {
+const AnimatedTypingComponent = () => {
   const delay = 1000;
   const toType = ["reliable", "passionate", "motivated"];
 
@@ -37,18 +35,17 @@ export default function AnimatedTypingComponent() {
           Hi, my name is <span className="name">Steven</span>.
         </p>
         <Typing.Delay ms={delay} />
-        <Typing.Backspace count={22} />
+        {/* <Typing.Backspace count={22} /> */}
         <p>
           I am a <span className="span">web developer.</span>
         </p>
         <div className="animated-text">
           <Typing.Delay ms={delay} />
-          <p>I am</p>
-          {typeWords(toType)}
+          <p>I am {typeWords(toType)}</p>
         </div>
       </Typing>
       <Typing speed={15}>
-        <Typing.Delay ms={10500} />
+        <Typing.Delay ms={9000} />
         <p>
           Enjoy your stay and feel free to{" "}
           <a href="mailto:stevencschoi@gmail.com">leave me a message!</a>
@@ -57,3 +54,5 @@ export default function AnimatedTypingComponent() {
     </div>
   );
 }
+
+export default AnimatedTypingComponent;

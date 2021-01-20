@@ -1,8 +1,7 @@
 import React from "react";
-import "../../styles/Header.scss";
 const classNames = require("classnames");
 
-export default function NavLink(props) {
+const NavLink = (props) => {
   const linkClass = classNames({});
   return (
     <a href={props.path} target={props.target}>
@@ -10,3 +9,5 @@ export default function NavLink(props) {
     </a>
   );
 }
+
+export default NavLink;

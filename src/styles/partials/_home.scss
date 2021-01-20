@@ -1,0 +1,53 @@
+.hero {
+  background-color: #ffffff;
+  background-image: url('../../assets/banner.jpeg');
+  background-blend-mode: luminosity;
+  height: calc(100vh - 77px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 25px 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  // background-image: linear-gradient(to right, #fad155 66%, $background-color);
+  // width: 45%;
+  width: 600px;
+  .feature-image {
+    // height: $feature-height;
+    // width: $feature-height;
+    margin-right: 4 * $margin-list;
+    img {
+      min-width: 220px;
+      max-width: 220px;
+      min-height: 220px;
+      max-height: 220px;
+      // height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .feature {
+    height: $feature-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $link;
+    h1 {
+      color: $link;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+  }
+}

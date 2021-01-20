@@ -1,9 +1,19 @@
 import React from "react";
-import "../styles/About.scss";
+import { info } from '../models';
 
-export default function About() {
+const About = () => {
   return (
-    <>
+    <React.Fragment id="about">
+      <div className="flex-container">
+        <div className="feature-image">
+          <img src={info.image} alt="Steven headshot" />
+        </div>
+        <div className="feature">
+          <h1>Steven Choi</h1>
+          <h3>Full-Stack Web Developer</h3>
+        </div>
+      </div>
+
       <h1>My Values</h1>
 
       <article>
@@ -48,6 +58,8 @@ export default function About() {
           to become the best developer I can be.
         </p>
       </article>
-    </>
+    </React.Fragment>
   );
 }
+
+export default About;

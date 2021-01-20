@@ -1,14 +1,12 @@
 import React from "react";
 import Nav from "./partials/Nav";
-import "../styles/Header.scss";
 
-export default function Header(props) {
+const Header = () => {
   return (
     <header>
-      {/*<div className="logo">
-        <img src={props.logo} alt="company logo"></img>
-  </div>*/}
       <Nav />
     </header>
   );
 }
+
+export default Header;

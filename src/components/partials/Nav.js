@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/Header.scss";
 import NavLink from "../partials/NavLink";
 
 export default function Nav() {
@@ -7,7 +6,7 @@ export default function Nav() {
     <nav>
       <ul>
         <NavLink path="/">Home</NavLink>
-        <NavLink path="/about">About</NavLink>
+        <NavLink path="#about">About</NavLink>
         <NavLink path="/projects">Projects</NavLink>
         <NavLink path="/inspiration">Inspiration</NavLink>
         <NavLink

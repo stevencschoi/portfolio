@@ -1,9 +1,8 @@
 import React from "react";
 import { info } from '../models';
 import NavLink from "./partials/NavLink";
-import "../styles/Footer.scss";
 
-export default function Footer() {
+const Footer = () => {
   const socialIcons = {
     github: 'fab fa-github',
     facebook: 'fab fa-facebook',
@@ -36,3 +35,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

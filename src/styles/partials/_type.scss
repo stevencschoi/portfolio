@@ -1,0 +1,56 @@
+.typewriter {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  height: 90px;
+  width: 535px;
+  font-size: 2rem;
+  background-color: rgba(11, 10, 7, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  .name {
+    color: $lightblue;
+  }
+
+  .span {
+    color: $lightred;
+    // color: #6f58c9;
+  }
+
+  .animated-text {
+    display: flex;
+    p {
+      margin-right: 5px;
+    }
+  }
+
+  .name,
+  .span,
+  .passionate,
+  .motivated,
+  .reliable,
+  a {
+    font-weight: 700;
+  }
+
+  a {
+    color: $secondary;
+  }
+
+  a:hover,
+  a:focus {
+    color: $secondary;
+  }
+
+  .passionate {
+    color: $red;
+  }
+
+  .motivated {
+    color: $yellow;
+  }
+
+  .reliable {
+    color: $lightpurple;
+  }
+}
