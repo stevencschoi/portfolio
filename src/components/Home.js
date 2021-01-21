@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
@@ -9,8 +9,24 @@ import { useDisplayData } from './hooks/useDisplayData';
 
 const Home = () => {
   const { displayData } = useDisplayData();
+  //***** state to toggle hamburger nav***** */
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <main>
+      <button
+        aria-label="show nav"
+        className={showNav ? 'hamburger-btn active' : 'hamburger-btn'}
+        onClick={toggleNav}
+      >
+        <span className="line line-1"></span>
+        <span className="line line-2"></span>
+        <span className="line line-3"></span>
+      </button>
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}

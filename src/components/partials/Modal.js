@@ -13,7 +13,7 @@ const Modal = ({ obj }) => {
         </picture>
         <div className="bottom-modal">
           <div className="project-info">
-            <h2>{obj.title}</h2>
+            <h3>{obj.title}</h3>
             <p>{obj.desc}</p>
             <div className="button-container"> 
               <button>

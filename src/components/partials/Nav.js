@@ -1,9 +1,9 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
 
-const Nav = () => {
+const Nav = ({ navClass }) => {
   return (
-    <nav>
+    <nav className={navClass}>
       <ul>
         <NavHashLink aria-label={'home'} smooth to="#">Home</NavHashLink>
         <NavHashLink aria-label={'values'} to="/#values"
