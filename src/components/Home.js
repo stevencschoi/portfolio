@@ -10,7 +10,7 @@ const Home = () => {
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
-          <h1>Hello, I'm <span className="name">Steven Choi</span>.</h1>
+          <h1>Hi, my name is <span className="name">Steven</span>.</h1>
           <p>I'm a full-stack web developer.</p>
           <div className="button-container">
             <button className="button-link">

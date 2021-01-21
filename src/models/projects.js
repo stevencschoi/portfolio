@@ -12,7 +12,7 @@ export const projects = [
     title: 'VegTable',
     url: 'https://vegtable.xyz/',
     languages: ['React', 'Node.js', 'Postgres'],
-    desc: `A full-stack meal planning application`,
+    desc: `An analytics driven, meal planning application`,
     pic: Veg,
     webp: VegWebp
   },
