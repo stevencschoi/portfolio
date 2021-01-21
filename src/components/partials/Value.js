@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Value = (props) => {
+const Value = ({ title, quote, description }) => {
   return (
     <article>
-      <h3>{props.title[0]}
-        <span className={props.title[1]}> {props.title[1]}</span>
+      <h3>{title[0]}
+        <span className={title[1]}> {title[1]}</span>
       </h3>
       <p className="quote">
-        <i>{props.quote}</i>
+        <i>{quote}</i>
       </p>
-      <p className="desc">{props.description}</p>
+      <p className="desc">{description}</p>
     </article>
   )
 }

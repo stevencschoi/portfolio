@@ -14,7 +14,9 @@ const Home = () => {
           <p>I'm a full-stack web developer.</p>
           <div className="button-container">
             <button className="button-link">
-              <HashLink smooth to="#projects" scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}>
+              <HashLink to="#projects"
+                scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}
+              >
                 View My Work {' '}
                 <i className="fas fa-arrow-right"></i>
               </HashLink>
