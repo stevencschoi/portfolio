@@ -1,6 +1,6 @@
 import React from "react";
 import { HashLink } from 'react-router-hash-link';
-import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
+// import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
 import Projects from './Projects';
 
