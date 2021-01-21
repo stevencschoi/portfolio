@@ -3,7 +3,12 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../../assets/profile.JPG');
   background-position-x: 60%;
   padding: 50px;
-  // justify-content: center;
+  picture {
+    margin-right: 4rem;
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 article {
@@ -30,13 +35,6 @@ article {
 
 .desc {
   margin-bottom: 2rem;
-}
-
-picture {
-  margin-right: 4rem;
-  img {
-    max-width: 100%;
-  }
 }
 
 @media (max-width: 600px) {
