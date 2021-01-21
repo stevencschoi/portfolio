@@ -14,7 +14,7 @@ const Home = () => {
           <p>I'm a full-stack web developer.</p>
           <div className="button-container">
             <button className="button-link">
-              <HashLink to="#projects"
+              <HashLink aria-label={'projects'} to="#projects"
                 scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}
               >
                 View My Work {' '}
