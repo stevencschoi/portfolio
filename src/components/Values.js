@@ -18,8 +18,8 @@ const Values = () => {
   </div> */}
       <div className="image-article-container">
         <picture>
-          <source srcset={PortraitWebP} type='image/webp' />
-          <img src={Portrait} alt="Steven Choi" />
+          <source srcSet={PortraitWebP} type='image/webp' />
+          <img className="portrait" src={Portrait} alt="Steven Choi" />
         </picture>
         <div className="article-container">
           {info.values.map((val, index) => {

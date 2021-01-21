@@ -2,8 +2,12 @@
   background-color: #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
   background-blend-mode: luminosity;
+  // background-size: cover;
+  min-height: 100vh;
   height: 100vh;
+  max-height: 100vh;
   width: 100vw;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,5 +37,23 @@
     font-size: 3.6rem;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-size: cover;
+    h1 {
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  .button-link {
+    a,
+    i {
+      font-size: 2rem;
+    }
   }
 }

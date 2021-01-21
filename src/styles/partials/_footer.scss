@@ -17,9 +17,11 @@ footer {
   }
   .social {
     display: flex;
+    justify-content: center;
     margin-top: $margin-list;
     margin-left: $margin-list;
     li {
+      font-size: 1.8rem;
       margin: 0 $margin-list;
     }
     li:hover,
@@ -28,4 +30,10 @@ footer {
       font-weight: 700;
     }
   }
+}
+.flex-col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

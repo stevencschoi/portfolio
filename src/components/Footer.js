@@ -16,10 +16,8 @@ const Footer = () => {
       {/*<div className="logo">
         <img src={info.logo} alt="company logo"></img>
       </div>*/}
-      <div>
-        <p>&#169; 2020 {info.company} </p>
-      </div>
-      <div>
+      <div className="flex-col-container">
+        <p>&#169; 2020 {info.company}</p>
         <ul className="social">
           {info.social.map((platform, index) => {
             return (
