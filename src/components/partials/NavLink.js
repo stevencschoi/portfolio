@@ -1,11 +1,11 @@
 import React from "react";
 const classNames = require("classnames");
 
-const NavLink = (props) => {
+const NavLink = ({ name, path, target, children }) => {
   const linkClass = classNames({});
   return (
-    <a href={props.path} target={props.target}>
-      <li className={linkClass}>{props.children}</li>
+    <a href={path} target={target} aria-label={name}>
+      <li className={linkClass}>{children}</li>
     </a>
   );
 }
