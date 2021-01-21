@@ -4,6 +4,7 @@ const DisplayContext = React.createContext({});
 
 const DisplayContextProvider = props => {
   const [displayData, setDisplayData] = useState({
+    showNav: false,
     showModal: false,
     selectedProject: {}
   });

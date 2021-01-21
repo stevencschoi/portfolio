@@ -1,32 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
 import Projects from './Projects';
+import Nav from './partials/Nav';
 import Modal from './partials/Modal';
 
 import { useDisplayData } from './hooks/useDisplayData';
 
 const Home = () => {
-  const { displayData } = useDisplayData();
-  //***** state to toggle hamburger nav***** */
-  const [showNav, setShowNav] = useState(false);
-
-  const toggleNav = () => {
-    setShowNav(!showNav);
-  };
+  const { displayData, toggleNav, closeNav } = useDisplayData();
 
   return (
-    <main>
+    <main onClick={closeNav}>
+      {/* //***** show mobile hamburger nav ***** */}
       <button
         aria-label="show nav"
-        className={showNav ? 'hamburger-btn active' : 'hamburger-btn'}
-        onClick={toggleNav}
+        className={displayData.showNav ? 'hamburger-btn active' : 'hamburger-btn'}
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleNav();
+        }}
       >
         <span className="line line-1"></span>
         <span className="line line-2"></span>
         <span className="line line-3"></span>
       </button>
+      <Nav navClass={displayData.showNav ? 'active' : null} />
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}

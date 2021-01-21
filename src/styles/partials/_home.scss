@@ -1,3 +1,52 @@
+main {
+  position: relative;
+  nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 0;
+    z-index: 10;
+    overflow: hidden;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding-left: 2rem;
+      font-weight: 400;
+      a,
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        height: $li-height;
+        // margin: 1rem 0;
+      }
+    }
+    ul:first-child {
+      margin-top: $nav-top-margin;
+    }
+  }
+
+  nav.active {
+    height: 0;
+  }
+
+  .modal-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
 .hero {
   background-color: #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
@@ -49,18 +98,6 @@
   }
 }
 
-main {
-  position: relative;
-  .modal-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}
-
 @media (max-width: 600px) {
   .hero {
     background-size: cover;
@@ -78,15 +115,25 @@ main {
     }
   }
 
+  main {
+    nav.active {
+      // -webkit-transform: translateY(-50%);
+      // -ms-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      //! each line item has height: $li-height, multiple by number of nav links to get nav height plus the initial nav top margin
+      height: calc(270px + 2rem);
+    }
+  }
+
   // !<---------- hamburger ---------->
   .hamburger-btn {
     display: block;
     position: fixed;
+    top: 1%;
+    right: 0%;
     background-color: rgba(0, 0, 0, 0.8);
     border: none;
     outline: none;
-    top: 1%;
-    right: 0;
     width: 40px;
     height: 24px;
     margin-top: 2rem;
@@ -94,10 +141,10 @@ main {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 20;
-    transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
+    transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
   }
   .hamburger-btn .line {
     display: block;
@@ -108,10 +155,10 @@ main {
     left: 50%;
     margin-left: -20px;
     border-radius: 50px;
-    transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
+    transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
   }
   .hamburger-btn .line.line-1 {
     top: 0;

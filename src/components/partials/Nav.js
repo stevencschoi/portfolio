@@ -1,13 +1,15 @@
 import React from "react";
 import { NavHashLink } from 'react-router-hash-link';
+import { useDisplayData } from '../hooks/useDisplayData';
 
 const Nav = ({ navClass }) => {
+  const { toggleNav } = useDisplayData();
   return (
     <nav className={navClass}>
-      <ul>
+      <ul onClick={toggleNav}>
         <NavHashLink aria-label={'home'} smooth to="#">Home</NavHashLink>
         <NavHashLink aria-label={'values'} to="/#values"
-          scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}
+          scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
         >Values</NavHashLink>
         <NavHashLink aria-label={'projects'} to="/#projects"
           scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
