@@ -55,13 +55,19 @@
       margin: 0 1rem;
     }
   }
+  .button-link {
+    color: $pink;
+    border: 2px solid $pink;
+  }
+  .button-link:hover,
+  .button-link:focus {
+    color: $red;
+    border: 2px solid $red;
+  }
 }
 
 @media (max-width: 500px) {
   .card {
     width: 100%;
-    img {
-      max-height: 150px;
-    }
   }
 }

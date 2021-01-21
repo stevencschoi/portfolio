@@ -15,7 +15,7 @@ const Home = () => {
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
           <h1>Hi, my name is <span className="name">Steven</span>.</h1>
-          <p>I'm a full-stack web developer.</p>
+          <p>I'm a <span>full-stack</span> web developer.</p>
           <div className="button-container">
             <button className="button-link">
               <HashLink aria-label={'projects'} to="#projects"

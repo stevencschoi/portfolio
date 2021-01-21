@@ -1,22 +1,30 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import  { DisplayContext } from '../context/DisplayContext';
 
 export const useDisplayData = () => {
   const { displayData, setDisplayData } = useContext(DisplayContext);
 
   const displayModal = () => {
-    setDisplayData((prev) => ({
+    setDisplayData(prev => ({
       ...prev,
       showModal: true
     }));
   }
 
   const hideModal = () => {
-    setDisplayData((prev) => ({
+    setDisplayData(prev => ({
       ...prev,
-      showModal: false
+      showModal: false,
+      selectedProject: {},
     }));
   }
 
-  return { displayData, displayModal, hideModal }
+  const selectProject = project => {
+    setDisplayData(prev => ({
+      ...prev,
+      selectedProject: project
+    }))
+  }
+
+  return { displayData, displayModal, hideModal, selectProject };
 }

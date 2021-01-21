@@ -2,7 +2,7 @@ import React from 'react';
 import { useDisplayData } from '../hooks/useDisplayData';
 
 const Card = ({ obj }) => {
-  const { displayData, displayModal, hideModal } = useDisplayData();
+  const { displayData, displayModal, hideModal, selectProject } = useDisplayData();
   return (
     <div className="card" onClick={displayData.showModal ? hideModal : displayModal }>
       <picture>
@@ -21,7 +21,10 @@ const Card = ({ obj }) => {
             })}
           </ul>
           <div className="button-container">
-            <button className="button-link" onClick={displayModal}>Learn More</button>
+            <button className="button-link" onClick={() => {
+              selectProject(obj);
+              displayModal();
+            }}>Learn More</button>
           </div>
         </div>
       </div>

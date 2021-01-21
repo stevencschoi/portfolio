@@ -5,6 +5,7 @@ const DisplayContext = React.createContext({});
 const DisplayContextProvider = props => {
   const [displayData, setDisplayData] = useState({
     showModal: false,
+    selectedProject: {}
   });
 
   const providerValue = { displayData, setDisplayData };

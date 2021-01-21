@@ -12,11 +12,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .name {
+    color: $boldblue;
+    font-weight: 500;
+  }
+
   p {
     color: #ffffff;
     font-size: 3.2rem;
     font-weight: 500;
     margin: 1rem 0;
+    span {
+      color: $yellow;
+    }
   }
 }
 
