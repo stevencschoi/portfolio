@@ -29,7 +29,7 @@ export const projects = [
     title: 'Interview Scheduler',
     url: 'https://sc-scheduler.netlify.app/',
     languages: ['React', 'Node.js'],
-    desc: 'An interview scheduling application founded in React with real-time updates through socket.io. Tested with libraries Jest & Cypress.',
+    desc: 'An interview scheduling application founded in React with real-time updates through socket.io. Tested with Jest & Cypress.',
     pic: Scheduler,
     webp: SchedulerWebp
   },
