@@ -50,6 +50,9 @@
       margin: 0 1rem;
     }
   }
+  button {
+    z-index: 10;
+  }
 }
 
 @media (max-width: 500px) {

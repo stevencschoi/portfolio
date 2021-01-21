@@ -10,7 +10,7 @@ export default function Projects() {
         { projects.map((project, index) => {
           return (
             <React.Fragment key={index}>
-              <Card obj={project} handler={console.log('click!')}/>
+              <Card obj={project}/>
             </React.Fragment>
           )
         })}

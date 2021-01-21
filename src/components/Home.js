@@ -4,7 +4,10 @@ import { HashLink } from 'react-router-hash-link';
 import Values from './Values';
 import Projects from './Projects';
 
+// import { useDisplayData } from './hooks/useDisplayData';
+
 const Home = () => {
+  // const { displayData, hideModal } = useDisplayData();
   return (
     <>
       <div className="hero">

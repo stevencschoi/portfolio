@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useDisplayData } from '../hooks/useDisplayData';
 
-const Card = ({ obj, handler }) => {
+const Card = ({ obj }) => {
+  const { displayModal } = useDisplayData();
   return (
-    <div className="card" onClick={handler}>
+    <div className="card">
       <picture>
         <source srcSet={obj.webp} type="webp"/>
         <img src={obj.pic} alt={obj.desc} className="card-img" />
@@ -19,7 +21,7 @@ const Card = ({ obj, handler }) => {
             })}
           </ul>
           <div className="button-container">
-            <button className="button-link">Learn More</button>
+            <button className="button-link" onClick={displayModal}>Learn More</button>
           </div>
         </div>
       </div>
