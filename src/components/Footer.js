@@ -2,10 +2,7 @@ import React from "react";
 import { info } from '../models';
 import NavLink from "./partials/NavLink";
 
-import { useDisplayData } from './hooks/useDisplayData';
-
 const Footer = () => {
-  const { hideModal } = useDisplayData();
   const socialIcons = {
     github: 'fab fa-github',
     facebook: 'fab fa-facebook',
@@ -15,7 +12,7 @@ const Footer = () => {
   }
 
   return (
-    <footer onClick={hideModal}>
+    <footer>
       {/*<div className="logo">
         <img src={info.logo} alt="company logo"></img>
       </div>*/}

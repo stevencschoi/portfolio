@@ -3,14 +3,14 @@ import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
 import Projects from './Projects';
+import Modal from './partials/Modal';
 
 import { useDisplayData } from './hooks/useDisplayData';
 
 const Home = () => {
-  const { displayData, hideModal } = useDisplayData();
+  const { displayData } = useDisplayData();
   return (
     <main>
-      { displayData.showModal && <div className="modal-background" onClick={hideModal}></div>}
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
@@ -35,6 +35,7 @@ const Home = () => {
         <section id="projects">
           <Projects />
         </section>
+        {displayData.showModal && displayData.selectedProject && <Modal obj={displayData.selectedProject}/> }
       </div>
     </main>
   );

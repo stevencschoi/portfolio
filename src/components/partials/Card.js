@@ -2,12 +2,12 @@ import React from 'react';
 import { useDisplayData } from '../hooks/useDisplayData';
 
 const Card = ({ obj }) => {
-  const { displayData, displayModal, hideModal, selectProject } = useDisplayData();
+  const { displayData, displayModal, selectProject } = useDisplayData();
   return (
-    <div className="card" onClick={displayData.showModal ? hideModal : displayModal }>
+    <div className="card">
       <picture>
         <source srcSet={obj.webp} type="webp"/>
-        <img src={obj.pic} alt={obj.desc} className={displayData.showModal ? "card-img fade": "card-img"} />
+        <img src={obj.pic} alt={obj.title} className={displayData.showModal ? "card-img fade": "card-img"} />
       </picture>
       <div className="overlay">
         <div className="title-text">
