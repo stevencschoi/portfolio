@@ -35,7 +35,7 @@ const Home = () => {
           <div className="button-container">
             <button className="button-link">
               <HashLink aria-label={'projects'} to="#projects"
-                scroll={el => el.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})}
+                scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
               >
                 View My Work {' '}
                 <i className="fas fa-arrow-right"></i>

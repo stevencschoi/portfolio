@@ -117,9 +117,6 @@ main {
 
   main {
     nav.active {
-      // -webkit-transform: translateY(-50%);
-      // -ms-transform: translateY(-50%);
-      // transform: translateY(-50%);
       //! each line item has height: $li-height, multiple by number of nav links to get nav height plus the initial nav top margin
       height: calc(270px + 2rem);
     }
