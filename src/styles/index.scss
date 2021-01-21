@@ -306,3 +306,9 @@ code {
 video {
   max-width: 100%;
 }
+
+@media (max-width: 450px) {
+  header {
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@ export const info = {
   values: [
     { 
       title: ['continuous', 'learning'],
-      quote: `"I have no special talent. I am only passionately curious" - Albert
+      quote: `"I have no special talent. I am only passionately curious." - Albert
       Einstein`,
       description: `I love learning. At various stages in my life, I've learned to DJ, scuba dive and play piano to name a few things. Developing new skills and knowledge helps me gain perspective. I strive not for perfection, but for the experience and empathy to understand the world and people around me.`
     },
