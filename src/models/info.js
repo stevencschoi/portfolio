@@ -26,7 +26,7 @@ export const info = {
       title: ['stay', 'adaptable'],
       quote: `When we are no longer able to change a situation, we are challenged to
       change ourselves.” - Viktor Frankl`,
-      description: ` Change is inevitable. I strive to be adaptable - to be productive, dependable and happy regardless of external circumstances. I am grateful for the opportunity to pursue my passion for web development, and look forward to applying my knowledge and leveraging my experience to become the best developer, and human, I can be.`
+      description: ` Change is inevitable. I strive to be adaptable - to be productive, dependable and happy regardless of circumstances. I am grateful to pursue my passion for web development, and look forward to applying my knowledge and leveraging my experience to become the best developer, and human, I can be.`
     }
   ]
 };
