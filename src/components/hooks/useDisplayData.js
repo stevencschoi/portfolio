@@ -9,7 +9,6 @@ export const useDisplayData = () => {
       ...prev,
       showModal: true
     }));
-    console.log('showModal:', displayData.showModal);
   }
 
   const hideModal = () => {
@@ -17,7 +16,6 @@ export const useDisplayData = () => {
       ...prev,
       showModal: false
     }));
-    console.log('showModal:', displayData.showModal);
   }
 
   return { displayData, displayModal, hideModal }

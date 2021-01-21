@@ -4,12 +4,13 @@ import { HashLink } from 'react-router-hash-link';
 import Values from './Values';
 import Projects from './Projects';
 
-// import { useDisplayData } from './hooks/useDisplayData';
+import { useDisplayData } from './hooks/useDisplayData';
 
 const Home = () => {
-  // const { displayData, hideModal } = useDisplayData();
+  const { displayData, hideModal } = useDisplayData();
   return (
-    <>
+    <main>
+      { displayData.showModal && <div className="modal-background" onClick={hideModal}></div>}
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
@@ -35,7 +36,7 @@ const Home = () => {
           <Projects />
         </section>
       </div>
-    </>
+    </main>
   );
 }
 
