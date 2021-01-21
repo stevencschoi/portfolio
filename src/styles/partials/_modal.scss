@@ -25,7 +25,7 @@
   align-items: center;
   background-color: #ffffff;
   color: $background-color;
-  border-radius: 1.2rem;
+  // border-radius: 1.2rem;
   box-shadow: 0.4rem 0.4rem 0.5rem #000000;
   z-index: 20;
   padding-bottom: 2rem;
@@ -33,6 +33,7 @@
   width: 50%;
   max-height: 490px;
   max-width: 400px;
+  overflow: hidden;
   transition: all 0.6s ease;
   -moz-transition: all 0.6s ease 0s;
   -webkit-transition: all 0.6s ease 0s;

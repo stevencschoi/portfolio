@@ -3,9 +3,10 @@ import { useDisplayData } from '../hooks/useDisplayData';
 
 const Modal = ({ obj }) => {
   const { hideModal } = useDisplayData();
+
   return (
     <div className="modal-container" onClick={hideModal}>
-      <div className="modal">
+      <div className="modal" onClick={(e) => e.stopPropagation()} >
         <picture>
           <source srcSet={obj.webp} type="webp"/>
           <img src={obj.pic} alt={obj.desc} />
