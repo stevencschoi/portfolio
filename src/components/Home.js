@@ -2,6 +2,7 @@ import React from "react";
 import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
+import Inspiration from './Inspiration';
 import Projects from './Projects';
 import Nav from './partials/Nav';
 import Modal from './partials/Modal';
@@ -30,23 +31,26 @@ const Home = () => {
       <div className="hero">
         {/* <div className="container"> */}
           {/* <AnimatedTypingComponent /> */}
-          <h1>Hi, my name is <span className="name">Steven</span>.</h1>
-          <p>I'm a <span>full-stack</span> web developer.</p>
-          <div className="button-container">
-            <button className="button-link">
-              <HashLink aria-label={'projects'} to="#projects"
-                scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
-              >
-                View My Work {' '}
-                <i className="fas fa-arrow-right"></i>
-              </HashLink>
-            </button>
-          </div>
+        <h1>Hi, my name is <span className="name">Steven</span>.</h1>
+        <p>I'm a <span>full-stack</span> web developer.</p>
+        <div className="button-container">
+          <button className="button-link">
+            <HashLink aria-label={'projects'} to="#projects"
+              scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
+            >
+              View My Work {' '}
+              <i className="fas fa-arrow-right"></i>
+            </HashLink>
+          </button>
+        </div>
         {/* </div> */}
       </div>
       <div className="wrapper">
         <section id="values">
           <Values />
+        </section>
+        <section id="inspiration">
+          <Inspiration />
         </section>
         <section id="projects">
           <Projects />

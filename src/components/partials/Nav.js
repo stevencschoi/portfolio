@@ -11,6 +11,9 @@ const Nav = ({ navClass }) => {
         <NavHashLink aria-label={'values'} to="/#values"
           scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
         >Values</NavHashLink>
+        <NavHashLink aria-label={'inspiration'} to="/#inspiration"
+          scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
+        >Inspiration</NavHashLink>
         <NavHashLink aria-label={'projects'} to="/#projects"
           scroll={el => el.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})}
         >Projects</NavHashLink>
