@@ -10,7 +10,7 @@ import Gsp from '../assets/gsp.jpg';
 import GspWebp from '../assets/gsp.webp';
 
 export const people = [
-  { name: ['Daniel', 'Goldstein'], desc: `Lane 8's music has coloured many influential life experiences in my life to date. He pioneered a movement around eliminating phone use during shows, which serves as a reminder to try and be present in each moment.`, pic: Lane8, webp: Lane8Webp },
+  { name: ['Daniel', 'Goldstein'], desc: `Lane 8 has coloured many influential  experiences in my life through his music. He pioneered a movement around eliminating phone use during shows, which serves as a reminder to try and be present in each moment.`, pic: Lane8, webp: Lane8Webp },
   
   { name: ['Kobe', 'Bryant'], desc: `Tireless work ethic. Relentless competitor. The Mamba Mentality - to strive for greatness at any cost. Kobe's passing in 2020 was a stark reminder to live life with purpose. Shortly after, I enrolled in Bootcamp and hope to use his example as motivation to push past my limits. After all, what kind of person would stare into the sun for days on end because of one missed shot? Kobe. Bryant. Rest in peace.`, pic: Kobe, webp: KobeWebp },
 
