@@ -1,14 +1,21 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
-import FadeInSection from './FadeInSection';
-import Values from './Values';
-import Models from './Models';
-import Projects from './Projects';
-import Nav from './partials/Nav';
-import Modal from './partials/Modal';
+// import FadeInSection from './FadeInSection';
+// import Values from './Values';
+// import Models from './Models';
+// import Projects from './Projects';
+// import Modal from './partials/Modal';
 
 import { useDisplayData } from './hooks/useDisplayData';
+
+import Nav from './partials/Nav';
+// const Nav = React.lazy(() => import('./partials/Nav'));
+const FadeInSection = React.lazy(() => import('./FadeInSection'));
+const Values = React.lazy(() => import('./Values'));
+const Models = React.lazy(() => import('./Models'));
+const Projects = React.lazy(() => import('./Projects'));
+const Modal = React.lazy(() => import('./partials/Modal'));
 
 const Home = () => {
   const { displayData, toggleNav, closeNav } = useDisplayData();
@@ -51,18 +58,20 @@ const Home = () => {
         </div>
         {/* </div> */}
       </div>
-      <div className="wrapper">
-        <FadeInSection name="values">
-          <Values />
-        </FadeInSection>
-        <FadeInSection name="models">
-          <Models />
-        </FadeInSection>
-        <FadeInSection name="projects">
-          <Projects />
-        </FadeInSection>
-        {displayData.showModal && displayData.selectedProject && <Modal obj={displayData.selectedProject} />}
-      </div>
+      <React.Suspense fallback={<p>Loading...</p>}>
+        <div className="wrapper">
+          <FadeInSection name="values">
+            <Values />
+          </FadeInSection>
+          <FadeInSection name="models">
+            <Models />
+          </FadeInSection>
+          <FadeInSection name="projects">
+            <Projects />
+          </FadeInSection>
+          {displayData.showModal && displayData.selectedProject && <Modal obj={displayData.selectedProject} />}
+        </div>
+      </React.Suspense>
     </main>
   );
 };
