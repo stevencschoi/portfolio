@@ -5,7 +5,7 @@
   background-position-x: 125%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px;
+  padding: 50px 80px;
   picture {
     margin-right: 4rem;
     img {
@@ -44,6 +44,7 @@ article {
 @media (max-width: 640px) {
   .image-article-container {
     background-position-x: 80%;
+    padding: 50px 2rem;
     article {
       max-width: 100%;
     }
