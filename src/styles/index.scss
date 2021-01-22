@@ -234,20 +234,9 @@ ul {
   margin: 0;
 }
 
-// button {
-//   border: none;
-//   background-color: #0069ed;
-//   color: #ffffff;
-//   text-align: center;
-//   transition: background 250ms ease-in-out, transform 150ms ease;
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-// }
-
-// button:hover,
-// button:focus {
-//   background: #0053ba;
-// }
+button {
+  cursor: pointer;
+}
 
 a {
   text-decoration: none;
