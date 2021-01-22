@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink } from 'react-router-hash-link';
 // import AnimatedTypingComponent from "./partials/AnimatedTypingComponent";
 import Values from './Values';
-import Inspiration from './Inspiration';
+import Models from './Models';
 import Projects from './Projects';
 import Nav from './partials/Nav';
 import Modal from './partials/Modal';
@@ -49,8 +49,8 @@ const Home = () => {
         <section id="values">
           <Values />
         </section>
-        <section id="inspiration">
-          <Inspiration />
+        <section id="models">
+          <Models />
         </section>
         <section id="projects">
           <Projects />

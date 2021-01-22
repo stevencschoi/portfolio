@@ -6,7 +6,6 @@ const DisplayContextProvider = props => {
   const [displayData, setDisplayData] = useState({
     showNav: false,
     showModal: false,
-    grayscale: true,
     selectedProject: {},
   });
 
