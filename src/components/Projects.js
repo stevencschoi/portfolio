@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from '../models';
 import Card from './partials/Card';
 
-export default function Projects() {
+const Projects = () => {
   return (
     <>
       <h2>Projects</h2>
@@ -18,3 +18,5 @@ export default function Projects() {
     </>
   );
 }
+
+export default Projects;
