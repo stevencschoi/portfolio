@@ -39,7 +39,7 @@ const Home = () => {
           I'm a <span>full-stack</span> web developer.
         </p>
         <div className="button-container">
-          <button className="button-link">
+          <button className="button-link" data-cy="view">
             <HashLink
               aria-label={'projects'}
               to="#projects"
