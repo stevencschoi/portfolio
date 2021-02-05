@@ -300,6 +300,10 @@ video {
   max-width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 640px) {
   header {
     display: none;
